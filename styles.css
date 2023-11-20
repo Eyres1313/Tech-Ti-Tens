@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@keyframes pulse {
+  0% {
+    color: #e69138; /* Initial text color */
+  }
+  50% {
+    color: #ffd240; /* Color at 50% of the animation */
+  }
+  100% {
+    color: #e69138; /* Back to the initial text color */
+  }
+}
+.pulsing-text {
+  animation: pulse 2s infinite;
+}
+
+.main-header {
+  font-size: 3rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+#container {
+  border: solid 10px #e69138;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  background-color: white;
+  border-radius: 40px;
+  width: 20rem;
+  margin: 20px auto;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#question-container {
+  word-wrap: break-word;
+  min-width: 15rem;
+  min-height: 18rem;
+  margin: 10px;
+  font-size: 1.8rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #113f69;
+}
+#question-text {
+  text-align: center;
+}
+
+#next-button button {
+  border-radius: 20px;
+  padding: 10px 15px;
+  background-color: #6ca3d7;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#tf-buttons {
+  /* border: solid 3px rgb(240, 15, 214); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.buttons {
+  padding: 30px 50px;
+  border-radius: 50px;
+  margin: 20px 25px;
+  font-size: 1.25rem;
+  border: solid 2px rgb(87, 85, 85);
+}
+
+#true-button {
+  background-color: #5bc236;
+  color: black;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#false-button {
+  background-color: #f66f6f;
+  color: black;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#player-score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+}
+
+header {
+  background-color: #113f69;
+  color: #e69138;
+  height: 6rem;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: #113f69;
+  color: #e69138;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  text-align: center;
+}
+
+html,
+body {
+  background-color: #6ca3d7;
+  margin: 0;
+  padding: 0;
+}
